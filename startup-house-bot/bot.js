@@ -2,7 +2,7 @@ const TelegramBot = require("node-telegram-bot-api");
 const axios = require("axios");
 
 const OPENROUTER_API_KEY =
-  "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";
+  "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";
 
 const token = "7743909756:AAFcTXlfMjfkM9FccC12D4-JjAyGBxQvAuA";
 
