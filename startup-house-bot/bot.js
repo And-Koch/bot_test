@@ -1,10 +1,9 @@
 const TelegramBot = require("node-telegram-bot-api");
 const axios = require("axios");
+require("dotenv").config();
 
-const OPENROUTER_API_KEY =
-  "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";
-
-const token = "7743909756:AAFcTXlfMjfkM9FccC12D4-JjAyGBxQvAuA";
+const token = process.env.TELEGRAM_BOT_TOKEN;
+const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
 
 const bot = new TelegramBot(token, { polling: true });
 
